@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Hurricane&display=swap");
+
+:root {
+  --main-color: #478ea5;
+  --shadow-color: lightblue;
+}
+
+.hidden {
+  display: none;
+  border: none;
+  visibility: hidden;
+}
+
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 95%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fira Sans", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.content {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  background-color: white;
+  box-shadow: 10px 10px 10px var(--shadow-color);
+  border-radius: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* left */
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.left img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.left h3 {
+  width: fit-content;
+  background-color: #f0f1f3;
+}
+/* main */
+.mainContent {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.mainContent .interest {
+  flex: 2;
+  height: 50%;
+  display: flex;
+}
+.mainContent .interest img {
+  width: 400px;
+  height: 350px;
+}
+.mainContent .future {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  color: #524fa1;
+}
+.mainContent .future li {
+  list-style: circle;
+  margin-left: 5px;
+}
+.mainContent .future .dream {
+  width: 40%;
+  background-color: #f0f1f3;
+  margin-right: 10px;
+  padding: 0 20px;
+  border-radius: 10%;
+}
+.mainContent .future .skill {
+  width: 30%;
+  background-color: #f0f1f3;
+  margin-right: 10px;
+  padding: 0 20px;
+  border-radius: 10%;
+}
+.mainContent .future .expectation {
+  width: 30%;
+  padding: 0 20px;
+  background-color: #f0f1f3;
+  border-radius: 10%;
+}
+
+.mainContent .future .expectation p {
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.right #clock {
+  font-size: 30px;
+  width: 200px;
+  margin: 5px auto;
+  background-color: #f0f1f3;
+  border: 5px double #524fa1;
+  border-radius: 10%;
+}
+
+.right .toColleagues {
+  flex: 1;
+
+  margin: 0 auto;
+}
+.right .toColleagues li {
+  padding: 0;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.right .toMe {
+  flex: 2;
+  margin: 0 auto;
+}
