@@ -65,14 +65,19 @@ li {
 }
 
 .left img {
-  width: 350px;
-  height: 350px;
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  margin: 0 auto;
   border-radius: 50%;
 }
 
 .left h3 {
   width: fit-content;
   background-color: #f0f1f3;
+}
+.left li{
+  list-style:circle
 }
 /* main */
 .mainContent {
@@ -82,20 +87,25 @@ li {
   margin: 10px 0;
 }
 
+.mainContent h3{
+  text-decoration: underline;
+}
 .mainContent .interest {
   flex: 2;
   height: 50%;
   display: flex;
 }
 .mainContent .interest img {
-  width: 400px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
 }
 .mainContent .future {
   flex: 2;
+  
   display: flex;
   justify-content: space-between;
   color: #524fa1;
+  margin-bottom: 10px;
 }
 .mainContent .future li {
   list-style: circle;
@@ -103,13 +113,19 @@ li {
 }
 .mainContent .future .dream {
   width: 40%;
+  height: 95%;
+  overflow: hidden;
   background-color: #f0f1f3;
   margin-right: 10px;
+  margin-bottom: 5px;
   padding: 0 20px;
   border-radius: 10%;
+  
 }
 .mainContent .future .skill {
   width: 30%;
+  height: 95%;
+  overflow: hidden;
   background-color: #f0f1f3;
   margin-right: 10px;
   padding: 0 20px;
@@ -117,23 +133,28 @@ li {
 }
 .mainContent .future .expectation {
   width: 30%;
+  height: 95%;
+  overflow: hidden;
   padding: 0 20px;
   background-color: #f0f1f3;
   border-radius: 10%;
 }
 
-.mainContent .future .expectation p {
-}
+
 
 .right {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+
+
+
 .right #clock {
   font-size: 30px;
-  width: 200px;
+  width: fit-content;
   margin: 5px auto;
+  padding:5px;
   background-color: #f0f1f3;
   border: 5px double #524fa1;
   border-radius: 10%;
@@ -144,11 +165,7 @@ li {
 
   margin: 0 auto;
 }
-.right .toColleagues li {
-  padding: 0;
-  text-decoration: underline;
-  text-underline-position: under;
-}
+
 .right .toMe {
   flex: 2;
   margin: 0 auto;
