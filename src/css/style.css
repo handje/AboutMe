@@ -89,10 +89,15 @@ li {
 
 .mainContent h3{
   text-decoration: underline;
+  margin:0;
 }
 .mainContent .interest {
   flex: 2;
   height: 50%;
+  display: flex;
+  overflow: hidden;
+}
+.mainContent .interest .images{
   display: flex;
 }
 .mainContent .interest img {
@@ -162,7 +167,7 @@ li {
 
 .right .toColleagues {
   flex: 1;
-
+  background-color: #f0f1f3;
   margin: 0 auto;
 }
 

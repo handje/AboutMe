@@ -10,6 +10,7 @@
   </head>
   <body ondragstart="false">
     <img id="background" src="src\img\back.png" alt="background" />
+    <h1 class="hidden">PC화면을 권장합니다 :)</h1>
     <div class="content">
       <div class="left">
         <img id="picture" src="src\img\myPicture.jpg" alt="myPicture" />
@@ -36,11 +37,11 @@
       <div class="mainContent">
         <h2 id="hello_User">WELCOME😉</h2>
         <div class="interest">
-          <div class="hobby">
-            <h2>Interest</h2>
-            <img id="picture" src="src\img\music.jpg" alt="music" />
-            <img id="picture" src="src\img\music.jpg" alt="music" />
-          </div>
+          <h3>Interest</h3>
+            <div class="images">
+              <img class="hobbyImg" src="src\img\music.jpg" alt="music" />
+              <img class="hobbyImg" src="src\img\coffee.jpg" alt="coffee" />
+            </div>
         </div>
         <div class="future">
           <div class="dream">
@@ -83,24 +84,8 @@
       </div>
     </div>
     <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://aboutme-10.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
     <script src="src/js/clock.js"></script>
     <script src="src/js/move.js"></script>
     <script id="dsq-count-scr" src="//aboutme-10.disqus.com/count.js" async></script>
